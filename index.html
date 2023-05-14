@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Events and Functions</title>
+</head>
+<body>
+	
+<p>
+  <label>Centimeters</label>
+  <input id="inputcentimeters" type="number" placeholder="Centimeters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>ft: <span id="outputft"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputft").innerHTML=valNum/30.48;
+}
+</script>
+
+</body>
+</html>
